@@ -1522,7 +1522,7 @@ Item {
     Rectangle {
       anchors.fill: parent
       color: {
-        if (root.transparent) return "transparent";
+        if (root.transparent) return Qt.rgba(0, 0, 0, 0.92);
         var op = root.barConfig.backgroundOpacity !== undefined ? Number(root.barConfig.backgroundOpacity) / 100.0 : 1.0;
         return Qt.rgba(root.background.r, root.background.g, root.background.b, op);
       }
