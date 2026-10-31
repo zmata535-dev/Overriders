@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "zm.taskbar",
+  "name": "Taskbar",
+  "version": "1.0.0",
+  "author": "User",
+  "description": "Center bottom taskbar showing apps in spatial position order with icon, circle, and label options",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Taskbar.qml"
+  },
+  "barWidget": {
+    "displayName": "Taskbar",
+    "description": "Center bottom taskbar showing apps in spatial position order",
+    "category": "Compositor",
+    "allowMultiple": false,
+    "defaultSection": "center"
+  }
+}

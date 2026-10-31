@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "zm.bar",
+  "name": "My Bar",
+  "version": "1.0.0",
+  "author": "Omarchy",
+  "description": "Status bar with widgets",
+  "kinds": [
+    "bar"
+  ],
+  "entryPoints": {
+    "bar": "Bar.qml"
+  },
+  "omarchy": {
+    "clonedFrom": "omarchy.bar"
+  },
+  "schema": [
+    {
+      "key": "cornerStyle",
+      "type": "string",
+      "label": "Corner Style",
+      "defaultValue": "regular",
+      "choices": [
+        "regular",
+        "concave"
+      ]
+    },
+    {
+      "key": "colorScheme",
+      "type": "string",
+      "label": "Color Scheme",
+      "defaultValue": "default",
+      "choices": [
+        "default",
+        "light"
+      ]
+    },
+    {
+      "key": "backgroundOpacity",
+      "type": "integer",
+      "label": "Background Opacity (%)",
+      "defaultValue": 100,
+      "min": 10,
+      "max": 100,
+      "step": 5
+    }
+  ]
+}
